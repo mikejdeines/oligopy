@@ -515,7 +515,7 @@ if assign_tails:
         if gene in dicMarkers:
             for p in dicMarkers[gene]:
                 print(p)
-                rand = np.random.choice([0,1,2,3,4,5],replace=False,size=6)
+                rand = np.random.choice([0,1,2,3],replace=False,size=4)
                 tails = ordertails[rand].tolist()
                 tail5 = sep.join(tails[:3])
                 tail3 = sep.join(tails[3:])
