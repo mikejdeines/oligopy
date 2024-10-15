@@ -487,8 +487,8 @@ print("Total time" + str(totalfinal-totalstart))
 if assign_tails:
 
     print('Assigning tails')
-    P5fw = 'ACACTCTTTCCCTACACGACGCTCTTCCGATCT'
-    P7rc = str(Seq('GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT').reverse_complement())
+    P5fw = 'CGCGGGCTATATGCGAACCG'
+    P7rc = 'TAATACGACTCACTATAGGGCGTGGAGGGCATACAACGC'
 
     dicMarkers = {}
     for record in SeqIO.parse("Results/"+ dic_input["out"]+"_probeset.fasta", "fasta"):
